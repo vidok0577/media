@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline - Ваша личная лента</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-history"></i> Timeline</h1>
+            <p>Ваша личная лента событий с привязкой к местоположению</p>
+        </header>
+        
+        <div class="timeline-container">
+            <div class="timeline" id="timeline">
+                <div class="empty-timeline">
+                    <i class="fas fa-wind"></i>
+                    <p>Ваша лента пока пуста. Создайте первую запись!</p>
+                </div>
+            </div>
+            <div class="post-form">
+                <div class="form-group">
+                    <label for="post-content">Создать новую запись:</label>
+                    <textarea id="post-content" placeholder="Что у вас нового?"></textarea>
+                </div>
+                <button id="create-post" class="btn">
+                    <i class="fas fa-plus-circle"></i> Опубликовать
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal" id="coordinates-modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal">&times;</span>
+            <h2><i class="fas fa-map-marker-alt"></i> Введите координаты</h2>
+            <p>Не удалось определить ваше местоположение. Пожалуйста, введите координаты вручную в одном из форматов:</p>
+            <ul>
+                <li>51.50851, -0.12572 (с пробелом)</li>
+                <li>51.50851,-0.12572 (без пробела)</li>
+                <li>[51.50851, -0.12572] (в квадратных скобках)</li>
+            </ul>
+            <input type="text" class="coordinates-input" id="coordinates-input" placeholder="Введите координаты...">
+            <div class="error-message" id="coordinates-error">Некорректный формат координат!</div>
+            <button class="btn" id="submit-coordinates">
+                <i class="fas fa-check"></i> Подтвердить
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>

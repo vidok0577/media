@@ -1,6 +1,6 @@
-# Webpack5
+ТаймЛайн приложение, с сохранением геопозиции
+В паланах сделать TravelTracker для путешествий
 
-[Руководство по настройке Webpack](https://webpack.js.org/guides/)
-[Руководство по настройке GitHub Actions](https://docs.github.com/en/actions/quickstart)
+[Demo](https://vidok0577.github.io/media/)
 
 ![CI](https://github.com/vidok0577/media/actions/workflows/web.yml/badge.svg)
